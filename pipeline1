@@ -13,6 +13,10 @@ stage('host nginx'){
 steps{
   sh 'sudo cp -rf ecomm/* /var/www/html'
   }
+stage('restart nginx')
+steps{
+sh 'sudo systemctl resart nginx'
+}
 }
 }
 }
