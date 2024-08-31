@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('install nginx') {
+    stage('install niginx') {
       steps {
         // Install Nginx
         sh 'sudo apt update'
